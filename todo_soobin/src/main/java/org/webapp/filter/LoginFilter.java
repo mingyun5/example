@@ -31,7 +31,8 @@ public class LoginFilter implements Filter {
 		StringBuffer path = new StringBuffer(rq.getRequestURI());
 		if (rq.getQueryString() != null)
 			path.append("?").append(rq.getQueryString());
-	
+		
+		System.out.println("path : " + path);
 		
 		for (String s : excludedUrls) {
 			if(path.toString().equals(s) || path.toString().contains("/resources")) {
