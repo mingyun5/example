@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TodoDaoImpl implements TodoService {
-	private static final String URL = "jdbc:mysql://127.0.0.1/todo?useSSL=no&characterEncoding=utf8";
-	private static final String USER = "hansoobin";
-	private static final String PW = "1234";
+	private static final String URL = "jdbc:mysql://192.168.0.203/test_db?useSSL=no&characterEncoding=utf8";
+	private static final String USER = "mingyun";
+	private static final String PW = "alsrbs3193!";
 
 	private static Connection getConnection() {
 		Connection conn = null;
